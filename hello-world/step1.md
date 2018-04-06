@@ -1,7 +1,17 @@
-This is your first step.
+In this step you will install YARP
 
-## Task
+`echo "deb http://www.icub.org/ubuntu xenial contrib/science" > /etc/apt/sources.list.d/icub.list`{{execute}}
 
-This is an _example_ of creating a scenario and running a **command**
+`sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 57A5ACB6110576A6`{{execute}}
 
-`echo 'Hello World'`{{execute}}
+`apt-get update`{{execute}}
+
+`apt-get install -y yarp`{{execute}}
+
+`yarp version`{{execute}}
+
+---
+
+For multiple terminals, execute the command on T1 `some-command`{{execute T1}}
+
+For multiple terminals, execute the command on T2 `some-command`{{execute T2}}
