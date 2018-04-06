@@ -25,4 +25,4 @@ you will see the same on terminal #2:
 
 Our network so far is very simple:
 
-![Simple read-write example](dot_inline_dotgraph_5.png)
+![Simple read-write example](https://raw.githubusercontent.com/drdanz/katacoda-scenarios/master/hello-world/dot_inline_dotgraph_5.png)
