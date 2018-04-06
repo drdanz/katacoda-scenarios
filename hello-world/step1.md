@@ -14,9 +14,3 @@ Install yarp:
 
 Check yarp installed version:
 `yarp version`{{execute}}
-
----
-
-For multiple terminals, execute the command on T1 `some-command`{{execute T1}}
-
-For multiple terminals, execute the command on T2 `some-command`{{execute T2}}
