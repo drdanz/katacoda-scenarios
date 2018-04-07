@@ -27,14 +27,11 @@
     }
   },
   "files": [
-    "summer/summer.cpp",
-    "summer/CMakeLists.txt"
+    "summer.cpp",
+    "CMakeLists.txt"
   ],
   "environment": {
-    "showdashboard": true,
-    "dashboards": [{"name": "/root", "port": 10000}, {"name": "/read", "port": 10002}, {"name": "/write", "port": 10003}],
     "uilayout": "editor-terminal",
-    "uisettings": "c++",
     "uimessage1": "\u001b[32mInteractive Bash Terminal.\u001b[m\r\n"
   },
   "backend": {

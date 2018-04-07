@@ -1,25 +1,31 @@
-<pre class="file" data-filename="summer/summer.cpp" data-target="replace">#include <yarp/os/all.h>
-#include <iostream>
-using namespace std;
-using namespace yarp::os;
-int main(int argc, char *argv[]) {
+<pre class="file" data-filename="summer.cpp" data-target="replace">#include &lt;yarp/os/Network.h&gt;
+#include &lt;yarp/os/BufferedPort.h&gt;
+#include &lt;yarp/os/Bottle.h&gt;
+#include &lt;iostream&gt;
+
+using yarp::os::Network;
+using yarp::os::BufferedPort;
+using yarp::os::Bottle;
+
+int main(int argc, char* argv[])
+{
     Network yarp;
-    BufferedPort<Bottle> port;
+    BufferedPort&lt;Bottle&gt; port;
     port.open("/summer");
     while (true) {
-        cout << "waiting for input" << endl;
-        Bottle *input = port.read();
-        if (input!=NULL) {
-            cout << "got " << input->toString().c_str() << endl;
+        std::cout << "waiting for input" << std::endl;
+        Bottle* input = port.read();
+        if (input != NULL) {
+            std::cout << "got " << input->toString().c_str() << std::endl;
             double total = 0;
-            for (int i=0; i<input->size(); i++) {
+            for (int i = 0; i < input->size(); i++) {
                 total += input->get(i).asDouble();
             }
             Bottle& output = port.prepare();
             output.clear();
             output.addString("total");
             output.addDouble(total);
-            cout << "writing " << output.toString().c_str() << endl;
+            std::cout << "writing " << output.toString().c_str() << std::endl;
             port.write();
         }
     }
@@ -27,7 +33,7 @@ int main(int argc, char *argv[]) {
 }
 </pre>
 
-<pre class="file" data-filename="summer/CMakeLists.txt" data-target="replace">cmake_minimum_required(VERSION 3.0)
+<pre class="file" data-filename="CMakeLists.txt" data-target="replace">cmake_minimum_required(VERSION 3.0)
 
 project(summer)
 
@@ -38,9 +44,9 @@ target_link_libraries(summer YARP::YARP_OS
                              YARP::YARP_init)
 </pre>
 
-`cmake -H summer -B summer/build`{{execute}}
-`cmake --build summer/build`{{execute}}
-`summer/build/summer`{{execute}}
+`cmake -H . -B build`{{execute T4}}
+`cmake --build build`{{execute T4}}
+`build/summer`{{execute T4}}
 
 
 

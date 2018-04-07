@@ -14,3 +14,6 @@ Install yarp:
 
 Check yarp installed version:
 `yarp version`{{execute}}
+
+Check yarp installed version:
+`yarp check`{{execute}}
