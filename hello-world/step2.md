@@ -1,10 +1,10 @@
 Now start some three terminals and do the following:
 
-On terminal #1: `yarp server`{{execute T1}}
+On terminal 1: `yarp server`{{execute T1}}
 
-On terminal #2: `yarp read /read`{{execute T2}}
+On terminal 2: `yarp read /read`{{execute T2}}
 
-On terminal #3: `yarp write /write /read`{{execute T3}}
+On terminal 3: `yarp write /write /read`{{execute T3}}
 
 
 We'll say a bit more about "yarp server" in the next section;
