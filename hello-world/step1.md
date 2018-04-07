@@ -16,7 +16,7 @@ Check yarp installed version:
 `yarp version`{{execute}}
 
 
-<pre class="file" data-filename="app.js" data-target="replace">
+<pre class="file" data-filename="summer.cpp" data-target="replace">
 
 
 #include <yarp/os/all.h>
