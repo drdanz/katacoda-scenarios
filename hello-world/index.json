@@ -22,6 +22,9 @@
       "text": "finish.md"
     }
   },
+  "files": [
+    "app.js"
+  ],
   "environment": {
     "showdashboard": true,
     "dashboards": [{"name": "/root", "port": 10000}, {"name": "/read", "port": 10002}, {"name": "/write", "port": 10003}],
