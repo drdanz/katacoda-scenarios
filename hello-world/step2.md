@@ -1,4 +1,4 @@
-In this step you will learn something else
+Now start some three terminals and do the following:
 
 On terminal #1: `yarp server`{{execute T1}}
 

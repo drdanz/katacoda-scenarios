@@ -13,6 +13,10 @@
     {
       "title": "Step 2 - YARP Hello World!",
       "text": "step2.md"
+    },
+    {
+      "title": "Step 3 - Compile your first YARP program!",
+      "text": "step3.md"
     }],
     "intro": {
       "text": "intro.md",
@@ -23,7 +27,8 @@
     }
   },
   "files": [
-    "summer.cpp"
+    "summer/summer.cpp",
+    "summer/CMakeLists.txt"
   ],
   "environment": {
     "showdashboard": true,
